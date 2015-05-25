@@ -31,6 +31,7 @@
  *
  *  @return A newly created button.
  */
++ (UIButton *)defaultAccessoryButtonItem;
 + (UIButton *)defaultAccessoryButtonItemWithImage:(UIImage *)pImage;
 
 /**
