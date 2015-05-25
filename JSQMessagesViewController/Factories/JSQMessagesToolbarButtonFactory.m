@@ -25,11 +25,11 @@
 
 @implementation JSQMessagesToolbarButtonFactory
 
-+ (UIButton *)defaultAccessoryButtonItem
++ (UIButton *)defaultAccessoryButtonItemWithImage:(UIImage *)pImage
 {
-    UIImage *accessoryImage = [UIImage jsq_defaultAccessoryImage];
-    UIImage *normalImage = [accessoryImage jsq_imageMaskedWithColor:[UIColor lightGrayColor]];
-    UIImage *highlightedImage = [accessoryImage jsq_imageMaskedWithColor:[UIColor darkGrayColor]];
+    UIImage *accessoryImage = pImage;
+    UIImage *normalImage = [accessoryImage jsq_imageMaskedWithColor:[UIColor colorWithRed:193/255.0f green:46/255.0f blue:64/255.0f alpha:1.0f]];
+    UIImage *highlightedImage = [accessoryImage jsq_imageMaskedWithColor:[UIColor colorWithRed:193/255.0f green:46/255.0f blue:64/255.0f alpha:1.0f]];
 
     UIButton *accessoryButton = [[UIButton alloc] initWithFrame:CGRectMake(0.0f, 0.0f, accessoryImage.size.width, 32.0f)];
     [accessoryButton setImage:normalImage forState:UIControlStateNormal];
@@ -37,7 +37,7 @@
 
     accessoryButton.contentMode = UIViewContentModeScaleAspectFit;
     accessoryButton.backgroundColor = [UIColor clearColor];
-    accessoryButton.tintColor = [UIColor lightGrayColor];
+    accessoryButton.tintColor = [UIColor colorWithRed:193/255.0f green:46/255.0f blue:64/255.0f alpha:1.0f];
 
     return accessoryButton;
 }
@@ -48,16 +48,16 @@
 
     UIButton *sendButton = [[UIButton alloc] initWithFrame:CGRectZero];
     [sendButton setTitle:sendTitle forState:UIControlStateNormal];
-    [sendButton setTitleColor:[UIColor jsq_messageBubbleBlueColor] forState:UIControlStateNormal];
-    [sendButton setTitleColor:[[UIColor jsq_messageBubbleBlueColor] jsq_colorByDarkeningColorWithValue:0.1f] forState:UIControlStateHighlighted];
-    [sendButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateDisabled];
+    [sendButton setTitleColor:[UIColor colorWithRed:193/255.0f green:46/255.0f blue:64/255.0f alpha:1.0f];
+    [sendButton setTitleColor:[UIColor colorWithRed:193/255.0f green:46/255.0f blue:64/255.0f alpha:1.0f] forState:UIControlStateHighlighted];
+    [sendButton setTitleColor:[UIColor colorWithRed:187/255.0f green:188/255.0f blue:188/255.0f alpha:1.0f] forState:UIControlStateDisabled];
 
-    sendButton.titleLabel.font = [UIFont boldSystemFontOfSize:17.0f];
+    sendButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:16.f];
     sendButton.titleLabel.adjustsFontSizeToFitWidth = YES;
     sendButton.titleLabel.minimumScaleFactor = 0.85f;
     sendButton.contentMode = UIViewContentModeCenter;
     sendButton.backgroundColor = [UIColor clearColor];
-    sendButton.tintColor = [UIColor jsq_messageBubbleBlueColor];
+    sendButton.tintColor = [UIColor colorWithRed:193/255.0f green:46/255.0f blue:64/255.0f alpha:1.0f];
 
     CGFloat maxHeight = 32.0f;
 
