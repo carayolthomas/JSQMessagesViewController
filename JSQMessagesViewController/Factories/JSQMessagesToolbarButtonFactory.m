@@ -65,7 +65,7 @@
 
     UIButton *sendButton = [[UIButton alloc] initWithFrame:CGRectZero];
     [sendButton setTitle:sendTitle forState:UIControlStateNormal];
-    [sendButton setTitleColor:[UIColor colorWithRed:193/255.0f green:46/255.0f blue:64/255.0f alpha:1.0f];
+    [sendButton setTitleColor:[UIColor colorWithRed:193/255.0f green:46/255.0f blue:64/255.0f alpha:1.0f]];
     [sendButton setTitleColor:[UIColor colorWithRed:193/255.0f green:46/255.0f blue:64/255.0f alpha:1.0f] forState:UIControlStateHighlighted];
     [sendButton setTitleColor:[UIColor colorWithRed:187/255.0f green:188/255.0f blue:188/255.0f alpha:1.0f] forState:UIControlStateDisabled];
 
