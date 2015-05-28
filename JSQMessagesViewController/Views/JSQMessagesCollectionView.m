@@ -76,7 +76,7 @@
     _typingIndicatorMessageBubbleColor = [UIColor jsq_messageBubbleLightGrayColor];
     _typingIndicatorEllipsisColor = [_typingIndicatorMessageBubbleColor jsq_colorByDarkeningColorWithValue:0.3f];
 
-    _loadEarlierMessagesHeaderTextColor = [UIColor jsq_messageBubbleBlueColor];
+    _loadEarlierMessagesHeaderTextColor = [UIColor colorWithRed:255/255.0f green:0/255.0f blue:23/255.0f alpha:1.0f];
 }
 
 - (instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout *)layout
