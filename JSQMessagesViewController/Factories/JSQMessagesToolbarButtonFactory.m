@@ -70,7 +70,7 @@
     [sendButton setTitleColor:[UIColor colorWithRed:193/255.0f green:46/255.0f blue:64/255.0f alpha:1.0f] forState:UIControlStateHighlighted];
     [sendButton setTitleColor:[UIColor colorWithRed:187/255.0f green:188/255.0f blue:188/255.0f alpha:1.0f] forState:UIControlStateDisabled];
 
-    sendButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:16.f];
+    sendButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Medium" size:16.f];
     sendButton.titleLabel.adjustsFontSizeToFitWidth = YES;
     sendButton.titleLabel.minimumScaleFactor = 0.85f;
     sendButton.contentMode = UIViewContentModeCenter;
