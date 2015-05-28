@@ -28,8 +28,8 @@
 + (UIButton *)defaultAccessoryButtonItem
 {
     UIImage *accessoryImage = [UIImage jsq_defaultAccessoryImage];
-    UIImage *normalImage = [accessoryImage jsq_imageMaskedWithColor:[UIColor colorWithRed:193/255.0f green:46/255.0f blue:64/255.0f alpha:1.0f]];
-    UIImage *highlightedImage = [accessoryImage jsq_imageMaskedWithColor:[UIColor colorWithRed:193/255.0f green:46/255.0f blue:64/255.0f alpha:1.0f]];
+    UIImage *normalImage = [accessoryImage jsq_imageMaskedWithColor:[UIColor colorWithRed:255/255.0f green:0/255.0f blue:23/255.0f alpha:1.0f]];
+    UIImage *highlightedImage = [accessoryImage jsq_imageMaskedWithColor:[UIColor colorWithRed:255/255.0f green:0/255.0f blue:23/255.0f alpha:1.0f]];
 
     UIButton *accessoryButton = [[UIButton alloc] initWithFrame:CGRectMake(0.0f, 0.0f, accessoryImage.size.width, 32.0f)];
     [accessoryButton setImage:normalImage forState:UIControlStateNormal];
